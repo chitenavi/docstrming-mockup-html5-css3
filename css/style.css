@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+:root {
+   --max-width: 1000px;
+   --menu-height: 80px;
+}
+* {
+   font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+.main {
+   background-color: gray;
+   height: 120rem;
+}
+
+.footer {
+   background-color: black;
+   height: 30rem;
+}
+
+.site-header img {
+   display: block;
+   filter: grayscale(100%);
+   height: auto;
+}
