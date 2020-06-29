@@ -3,28 +3,74 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Digital Video Streaming</title>
+      <title>Docstrming</title>
+      <link
+         rel="stylesheet"
+         href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css"
+      />
       <link rel="stylesheet" href="./css/reset.css" />
       <link rel="stylesheet" href="./css/style.css" />
       <link rel="stylesheet" href="./css/navbar.css" />
+      <link rel="stylesheet" href="./css/header.css" />
+      <link rel="stylesheet" href="./css/footer.css" />
    </head>
-   <body>
+   <body class="wrapper">
       <nav class="navbar">
          <ul class="menu-list">
-            <li class="logo"><img src="./img/logo.png" alt="logo" /></li>
-            <li class="menu-item"><a href="#">Novedades</a></li>
-            <li class="menu-item"><a href="#">Documentales</a></li>
-            <li class="menu-item"><a href="#">Favoritos</a></li>
-            <li class="search">
-               <input type="text" placeholder="Buscar..." /><a href="#">P</a>
+            <li class="logo">
+               <a href="#"><img src="./img/logo.png" alt="logo" /></a>
             </li>
-            <li class="menu-item"><a href="#">Logout</a></li>
+            <li class="menu-item"><a href="#novedades">Novedades</a></li>
+            <li class="menu-item"><a href="#contenido">Contenido</a></li>
+            <li class="menu-item"><a href="#favoritos">Favoritos</a></li>
+            <li class="search">
+               <input type="text" placeholder="Buscar..." /><a href="#"
+                  ><i class="fas fa-search"></i
+               ></a>
+            </li>
+            <li class="logout"><a href="#" class="button">Logout</a></li>
          </ul>
       </nav>
       <header class="site-header">
-         <img src="./img/hero2.jpg" alt="Imagen Hero" />
+         <!-- <img src="./img/hero.jpg" alt="Imagen Hero" /> -->
+         <h1 class="main-title">Docstrming</h1>
+         <p>
+            Tu lugar de <span>documentales en streaming</span> con un inmenso
+            catálogo.
+         </p>
+         <p>Disfruta, descubre y aprende!</p>
       </header>
-      <main class="main"></main>
-      <footer class="footer"></footer>
+      <main class="main">
+         <section id="novedades">
+            <h1>Novedades</h1>
+            <p>
+               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+               Recusandae libero illum iure, dolor aliquid consectetur ducimus
+               harum dolore temporibus obcaecati saepe minima delectus nam minus
+               esse nostrum non id commodi.
+            </p>
+         </section>
+         <section id="contenido">
+            <h1>Contenido</h1>
+            <p>
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores
+               animi, rerum perspiciatis architecto repudiandae voluptatibus
+               expedita quos ab necessitatibus, quo velit accusantium fugit
+               reiciendis explicabo? Iure similique ea atque possimus!
+            </p>
+         </section>
+         <section id="favoritos">
+            <h1>Favoritos</h1>
+            <p>
+               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea
+               natus fugiat excepturi officiis unde ducimus exercitationem
+               eveniet pariatur consectetur ut ullam temporibus sed nesciunt
+               maiores, qui, blanditiis incidunt cupiditate non.
+            </p>
+         </section>
+      </main>
+      <footer class="footer">
+         <p>Todos los derechos reservados. <a href="#">Docstrming</a></p>
+      </footer>
    </body>
 </html>

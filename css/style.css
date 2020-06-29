@@ -3,23 +3,38 @@
 :root {
    --max-width: 1000px;
    --menu-height: 80px;
+   --color-primario: #a51c30;
+   --color-secundario: #a7333f;
 }
 * {
    font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
+.wrapper {
+   display: flex;
+   flex-direction: column;
+}
+
 .main {
    background-color: gray;
-   height: 120rem;
+   flex: 1;
 }
 
 .footer {
    background-color: black;
-   height: 30rem;
+   color: white;
+   text-align: center;
+   padding: 2rem 0;
 }
-
-.site-header img {
-   display: block;
-   filter: grayscale(100%);
-   height: auto;
+/* Botones */
+.button {
+   padding: 0.5rem 1rem;
+   border-radius: 15px;
+   color: white;
+   border: 2px solid white;
+   text-decoration: none;
+   transition: background-color 0.3s ease;
+}
+.button:hover {
+   background-color: var(--color-primario);
 }
