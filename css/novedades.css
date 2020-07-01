@@ -1,0 +1,31 @@
+.novedades-wrapper {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 1rem;
+}
+
+.nov-card {
+   position: relative;
+}
+
+.nov-card a,
+.nov-card img {
+   display: block;
+}
+.info-miniatura {
+   position: absolute;
+   background: transparent;
+   color: transparent;
+   width: 100%;
+   /* background-color: rgba(125, 125, 125, 0.4); */
+   padding: 1rem;
+   top: 0;
+}
+
+.info-miniatura:hover {
+   background-color: rgba(125, 125, 125, 0.4);
+   color: white;
+}
+.nov-card img:hover {
+   border: 1px solid var(--color-primario);
+}

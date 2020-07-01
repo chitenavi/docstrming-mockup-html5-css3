@@ -1,13 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 
 :root {
-   --max-width: 1000px;
+   --max-width: 1200px;
    --menu-height: 80px;
    --color-primario: #a51c30;
    --color-secundario: #a7333f;
 }
 * {
    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+body {
+   background-color: black;
+}
+
+h1 {
+   text-align: center;
 }
 
 .wrapper {
@@ -17,7 +24,14 @@
 
 .main {
    background-color: gray;
+   max-width: var(--max-width);
+   color: white;
+   margin: 0 auto;
    flex: 1;
+}
+
+.section {
+   margin: 2rem 0.5rem;
 }
 
 /* Botones */
