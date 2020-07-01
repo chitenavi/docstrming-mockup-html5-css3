@@ -4,7 +4,7 @@
    position: fixed;
    top: 0;
    left: 0;
-   width: 100%;
+   width: 100vw;
    height: var(--menu-height);
    background-color: rgba(0, 0, 0, 0.7);
 
@@ -17,8 +17,7 @@
 
 .navbar .logo {
    order: 1;
-   flex-basis: 50%;
-   text-align: center;
+   flex-basis: 35vw;
 }
 
 .logo img {
@@ -32,10 +31,9 @@
 .burger-label {
    color: white;
    order: 0;
-   flex-basis: 20%;
+   flex-basis: 25vw;
    text-align: center;
-   /* margin-left: 1rem; */
-   font-size: 3.6rem;
+   font-size: 2.8rem;
 }
 
 #burger-checkbox {
@@ -48,14 +46,14 @@
    display: none;
    text-align: center;
    list-style: none;
+   font-size: 1.8rem;
    margin: 0;
 }
 
 .navbar .logout {
    order: 2;
-   /* margin-right: 1rem; */
-   flex-basis: 20%;
-   /* display: block; */
+   margin-right: 1.4rem;
+   flex-basis: 25vw;
 }
 
 /* Menu abierto */
@@ -72,13 +70,15 @@
    justify-content: space-evenly;
 }
 
+.menu-list a {
+   text-decoration: none;
+   color: white;
+   text-transform: uppercase;
+}
+
 .menu-item > a {
    display: block;
-   text-decoration: none;
-   text-transform: uppercase;
-   line-height: 6rem;
-   font-size: 2.2rem;
-   color: white;
+   line-height: var(--menu-height);
 }
 
 .search-item {
@@ -96,9 +96,7 @@
 
 .search-item a {
    margin-left: 1rem;
-   font-size: 1.8rem;
    text-decoration: none;
-   color: white;
 }
 
 /* Adaptamos contenido a pantallas mayores */
@@ -114,11 +112,16 @@
       font-size: 1.1rem;
       margin-left: 1rem;
    }
+
+   .navbar .logo,
+   .navbar .logout {
+      flex-basis: auto;
+   }
    .navbar .menu-list {
       display: inherit;
       padding: 0;
       order: 1;
-      flex-basis: 75%;
+      flex-basis: 70%;
 
       justify-content: flex-end;
       align-items: center;
