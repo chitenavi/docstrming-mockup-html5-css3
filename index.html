@@ -16,23 +16,30 @@
    </head>
    <body class="wrapper">
       <nav class="navbar">
+         <div class="logo">
+            <a href="#"><img src="./img/logo.png" alt="logo" /></a>
+         </div>
+
+         <input type="checkbox" id="burger-checkbox" />
+         <label for="burger-checkbox" class="burger-label">
+            <i class="fas fa-bars"></i>
+         </label>
+
          <ul class="menu-list">
-            <li class="logo">
-               <a href="#"><img src="./img/logo.png" alt="logo" /></a>
-            </li>
             <li class="menu-item"><a href="#novedades">Novedades</a></li>
-            <li class="menu-item"><a href="#contenido">Contenido</a></li>
+            <li class="menu-item"><a href="#catalogo">Catalogo</a></li>
             <li class="menu-item"><a href="#favoritos">Favoritos</a></li>
-            <li class="search">
+            <li class="search-item">
                <input type="text" placeholder="Buscar..." /><a href="#"
                   ><i class="fas fa-search"></i
                ></a>
             </li>
-            <li class="logout"><a href="#" class="button">Logout</a></li>
          </ul>
+         <div class="logout">
+            <button class="button">logout</button>
+         </div>
       </nav>
       <header class="site-header">
-         <!-- <img src="./img/hero.jpg" alt="Imagen Hero" /> -->
          <h1 class="main-title">Docstrming</h1>
          <p>
             Tu lugar de <span>documentales en streaming</span> con un inmenso
@@ -50,8 +57,8 @@
                esse nostrum non id commodi.
             </p>
          </section>
-         <section id="contenido">
-            <h1>Contenido</h1>
+         <section id="catalogo">
+            <h1>Catalogo</h1>
             <p>
                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores
                animi, rerum perspiciatis architecto repudiandae voluptatibus
