@@ -1,10 +1,4 @@
-.novedades-wrapper {
-   display: grid;
-   grid-template-columns: repeat(2, 1fr);
-   gap: 1rem;
-}
-
-/* .doc-card {
+.doc-card {
    position: relative;
 }
 
@@ -52,4 +46,4 @@
    .doc-card:hover .info-miniatura {
       display: block;
    }
-} */
+}

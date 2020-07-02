@@ -13,25 +13,24 @@ body {
    background-color: black;
 }
 
-h1 {
-   text-align: center;
-}
-
-.wrapper {
+/* .wrapper {
    display: flex;
    flex-direction: column;
-}
+   justify-content: space-between;
+} */
 
 .main {
-   background-color: gray;
    max-width: var(--max-width);
    color: white;
    margin: 0 auto;
-   flex: 1;
 }
 
 .section {
    margin: 2rem 0.5rem;
+}
+.section > h1 {
+   text-align: center;
+   text-transform: uppercase;
 }
 
 /* Botones */
