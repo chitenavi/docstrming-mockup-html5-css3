@@ -8,6 +8,7 @@
    text-decoration: none;
 }
 
+/* En mobile solo muestro titulo */
 .info-miniatura h2 {
    color: white;
    text-decoration: none;
@@ -19,6 +20,30 @@
    display: none;
 }
 
+/* Logica del favorito */
+.favorito {
+   position: absolute;
+   top: 0;
+   right: 0;
+   margin: 0.5rem 0.5rem 0 0;
+   font-size: 1.6rem;
+}
+
+.fav-checkbox {
+   display: none;
+}
+.fas.fa-star {
+   display: none;
+}
+.fav-checkbox:checked ~ .fav-label .fas.fa-star {
+   color: gold;
+   display: inline;
+}
+.fav-checkbox:checked ~ .fav-label .far.fa-star {
+   display: none;
+}
+
+/* Para pantallas mayores mostramos info detallada */
 @media (min-width: 768px) {
    .info-miniatura {
       position: absolute;
@@ -26,24 +51,30 @@
       padding: 0.5rem;
       background-color: rgba(125, 125, 125, 0.6);
       color: white;
-      text-shadow: 1px 1px 1px rgb(0, 0, 0);
+      text-shadow: 1px 1px 1px black;
+      transition: opacity 0.3s ease-in-out;
 
-      display: none;
+      opacity: 0;
    }
    .info-miniatura h2 {
-      font-size: 1.4rem;
+      font-size: 1.1rem;
       font-weight: bold;
       color: var(--color-primario);
    }
    .info-miniatura .no-info-mobile {
       display: block;
+      font-size: 85%;
    }
    .no-info-mobile span {
       font-weight: 600;
       text-transform: uppercase;
    }
 
+   .favorito:hover i {
+      color: gold;
+      cursor: pointer;
+   }
    .doc-card:hover .info-miniatura {
-      display: block;
+      opacity: 1;
    }
 }

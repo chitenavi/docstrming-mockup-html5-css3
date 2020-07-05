@@ -1,0 +1,71 @@
+.body-detailinfo {
+   display: flex;
+   flex-direction: column;
+   height: 100vh;
+}
+.main {
+   flex-basis: 100%;
+   color: white;
+}
+.fondo-contenido {
+   background-image: url(../img/imagen21.jpg);
+   background-size: cover;
+   background-position: center;
+}
+
+.ficha-doc {
+   background-color: rgba(0, 0, 0, 0.5);
+   backdrop-filter: blur(10px) opacity(0.4);
+   -webkit-backdrop-filter: blur(10px) opacity(0.4);
+   padding-top: var(--menu-height);
+}
+
+.ficha-doc > .doc-title {
+   width: 100%;
+   height: auto;
+   text-align: center;
+   padding: 1rem 0;
+   font-size: 2rem;
+   font-weight: normal;
+}
+.ficha-doc .doc-video {
+   text-align: center;
+   padding: 0.5rem;
+   margin: 0 auto;
+}
+.doc-video video {
+   max-height: 500px;
+   border: 1px solid var(--color-primario);
+}
+.ficha-doc .doc-info {
+   padding: 0.5rem;
+   font-size: 80%;
+   width: 85%;
+   margin: 0 auto;
+   /* background-color: rgba(0, 0, 0, 0.3); */
+}
+.ficha-doc .doc-play {
+   text-align: center;
+   padding: 1rem;
+}
+.doc-play a {
+   text-decoration: none;
+}
+
+@media (min-width: 992px) {
+   .ficha-doc {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding-left: 4rem;
+      padding-right: 4rem;
+   }
+   .ficha-doc .doc-video {
+      width: 60%;
+   }
+   .ficha-doc .doc-info {
+      width: 40%;
+      font-size: 90%;
+   }
+}

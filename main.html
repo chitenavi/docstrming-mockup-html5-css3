@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Docstrming</title>
+      <link
+         rel="stylesheet"
+         href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css"
+      />
+
+      <link rel="stylesheet" href="./css/reset.css" />
+      <link rel="stylesheet" href="./css/style.css" />
+      <link rel="stylesheet" href="./css/navbar.css" />
+      <link rel="stylesheet" href="./css/header.css" />
+      <link rel="stylesheet" href="./css/novedades.css" />
+      <link rel="stylesheet" href="./css/miniatura.css" />
+      <link rel="stylesheet" href="./css/catalogo.css" />
+      <link rel="stylesheet" href="./css/footer.css" />
+   </head>
+   <body class="wrapper">
+      <nav class="navbar">
+         <div class="logo">
+            <a href="#"><img src="./img/logo.png" alt="logo" /></a>
+         </div>
+
+         <input type="checkbox" id="burger-checkbox" />
+         <label for="burger-checkbox" class="burger-label">
+            <i class="fas fa-bars"></i>
+         </label>
+
+         <ul class="menu-list">
+            <li class="menu-item"><a href="#novedades">Novedades</a></li>
+            <li class="menu-item"><a href="#catalogo">Catalogo</a></li>
+            <li class="menu-item"><a href="#favoritos">Favoritos</a></li>
+            <li class="search-item">
+               <form action="#">
+                  <input type="search" placeholder="Buscar..." />
+                  <button class="button btn-transparent">
+                     <i class="fas fa-search"></i>
+                  </button>
+               </form>
+            </li>
+         </ul>
+         <form action="index.html" class="logout">
+            <button class="button btn-hollow">logout</button>
+         </form>
+      </nav>
+      <header class="site-header">
+         <h1 class="main-title">docstrming</h1>
+         <div class="tag-line">
+            <p>
+               Tu lugar de <span>documentales en streaming</span> con un inmenso
+               catálogo.
+            </p>
+            <p>Disfruta, descubre y aprende!</p>
+         </div>
+      </header>
+      <main>
+         <section class="section novedades" id="novedades">
+            <h1>Novedades</h1>
+            <div class="novedades-wrapper">
+               <article class="doc-card">
+                  <a href="./detailinfo.html">
+                     <img src="./img/imagen21.jpg" alt="" />
+                     <div class="info-miniatura">
+                        <h2>Inteligencia Artificial</h2>
+                        <div class="no-info-mobile">
+                           <p><span>Genero:</span> Ciencia</p>
+                           <p><span>Año:</span> 2020</p>
+                           <p><span>Puntuación:</span> 3/5</p>
+                           <p>
+                              <span>Sinopsis:</span>
+                              Lorem ipsum dolor sit amet, consectetur
+                              adipisicing elit. Ipsam blanditiis, quo sunt
+                              facere obcaecati
+                           </p>
+                        </div>
+                     </div>
+                  </a>
+                  <div class="favorito">
+                     <input
+                        type="checkbox"
+                        class="fav-checkbox"
+                        id="fav-checkbox1"
+                     />
+                     <label for="fav-checkbox1" class="fav-label">
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                     </label>
+                  </div>
+               </article>
+               <article class="doc-card">
+                  <a href="./detailinfo.html">
+                     <img src="./img/imagen3.jpg" alt="" />
+                     <div class="info-miniatura">
+                        <h2>Pandemia Covid-19</h2>
+                        <div class="no-info-mobile">
+                           <p><span>Genero:</span> Investigación</p>
+                           <p><span>Año:</span> 2020</p>
+                           <p><span>Puntuación:</span> 4/5</p>
+                           <p>
+                              <span>Sinopsis:</span>
+                              Lorem ipsum dolor sit amet, consectetur
+                              adipisicing elit. Ipsam blanditiis, quo sunt
+                              facere obcaecati
+                           </p>
+                        </div>
+                     </div>
+                  </a>
+                  <div class="favorito">
+                     <input
+                        type="checkbox"
+                        class="fav-checkbox"
+                        id="fav-checkbox2"
+                     />
+                     <label for="fav-checkbox2" class="fav-label">
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                     </label>
+                  </div>
+               </article>
+               <article class="doc-card">
+                  <a href="./detailinfo.html">
+                     <img src="./img/imagen23.jpg" alt="" />
+                     <div class="info-miniatura">
+                        <h2>Grandes Castillos</h2>
+                        <div class="no-info-mobile">
+                           <p><span>Genero:</span> Construcciones</p>
+                           <p><span>Año:</span> 2020</p>
+                           <p><span>Puntuación:</span> 4/5</p>
+                           <p>
+                              <span>Sinopsis:</span>
+                              Lorem ipsum dolor sit amet, consectetur
+                              adipisicing elit. Ipsam blanditiis, quo sunt
+                              facere obcaecati
+                           </p>
+                        </div>
+                     </div>
+                  </a>
+                  <div class="favorito">
+                     <input
+                        type="checkbox"
+                        class="fav-checkbox"
+                        id="fav-checkbox3"
+                     />
+                     <label for="fav-checkbox3" class="fav-label">
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                     </label>
+                  </div>
+               </article>
+               <article class="doc-card">
+                  <a href="./detailinfo.html">
+                     <img src="./img/imagen24.jpg" alt="" />
+                     <div class="info-miniatura">
+                        <h2>Maestros de la pizza</h2>
+                        <div class="no-info-mobile">
+                           <p><span>Genero:</span> Comida</p>
+                           <p><span>Año:</span> 2020</p>
+                           <p><span>Puntuación:</span> 3/5</p>
+                           <p>
+                              <span>Sinopsis:</span> Lorem ipsum dolor sit amet,
+                              consectetur adipisicing elit. Ipsam blanditiis,
+                              quo sunt facere obcaecati
+                           </p>
+                        </div>
+                     </div>
+                  </a>
+                  <div class="favorito">
+                     <input
+                        type="checkbox"
+                        class="fav-checkbox"
+                        id="fav-checkbox4"
+                     />
+                     <label for="fav-checkbox4" class="fav-label">
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                     </label>
+                  </div>
+               </article>
+            </div>
+         </section>
+
+         <section class="section catalogo" id="catalogo">
+            <h1>Catalogo</h1>
+            <div class="filter">
+               <select id="categoria" name="categoria">
+                  <option value="">-- Todas las categorías --</option>
+                  <option value="1">Ciencia</option>
+                  <option value="2">Investigación</option>
+                  <option value="3">Construcciones</option>
+                  <option value="4">Comida</option>
+                  <option value="5">Naturaleza</option>
+               </select>
+            </div>
+            <div class="catalogo-wrapper">
+               <article class="doc-card">
+                  <a href="./detailinfo.html">
+                     <img src="./img/imagen1.jpg" alt="" />
+                     <div class="info-miniatura">
+                        <h2>EL Tigre de Bengala</h2>
+                        <div class="no-info-mobile">
+                           <p><span>Genero:</span> Naturaleza</p>
+                           <p><span>Año:</span> 2007</p>
+                           <p><span>Puntuación:</span> 4/5</p>
+                           <p>
+                              <span>Sinopsis:</span>
+                              Lorem ipsum dolor sit amet, consectetur
+                              adipisicing elit. Ipsam blanditiis, quo sunt
+                              facere obcaecati
+                           </p>
+                        </div>
+                     </div>
+                  </a>
+                  <div class="favorito">
+                     <input
+                        type="checkbox"
+                        class="fav-checkbox"
+                        id="fav-checkbox5"
+                     />
+                     <label for="fav-checkbox5" class="fav-label">
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                     </label>
+                  </div>
+               </article>
+               <article class="doc-card">
+                  <a href="./detailinfo.html">
+                     <img src="./img/imagen2.jpg" alt="" />
+                     <div class="info-miniatura">
+                        <h2>Piedras De Stonehenge</h2>
+                        <div class="no-info-mobile">
+                           <p><span>Genero:</span> Construcciones</p>
+                           <p><span>Año:</span> 2013</p>
+                           <p><span>Puntuación:</span> 2/5</p>
+                           <p>
+                              <span>Sinopsis:</span>
+                              Lorem ipsum dolor sit amet, consectetur
+                              adipisicing elit. Ipsam blanditiis, quo sunt
+                              facere obcaecati
+                           </p>
+                        </div>
+                     </div>
+                  </a>
+                  <div class="favorito">
+                     <input
+                        type="checkbox"
+                        class="fav-checkbox"
+                        id="fav-checkbox6"
+                     />
+                     <label for="fav-checkbox6" class="fav-label">
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                     </label>
+                  </div>
+               </article>
+               <article class="doc-card">
+                  <a href="./detailinfo.html">
+                     <img src="./img/imagen3.jpg" alt="" />
+                     <div class="info-miniatura">
+                        <h2>Pandemia Covid-19</h2>
+                        <div class="no-info-mobile">
+                           <p><span>Genero:</span> Investigación</p>
+                           <p><span>Año:</span> 2020</p>
+                           <p><span>Puntuación:</span> 4/5</p>
+                           <p>
+                              <span>Sinopsis:</span>
+                              Lorem ipsum dolor sit amet, consectetur
+                              adipisicing elit. Ipsam blanditiis, quo sunt
+                              facere obcaecati
+                           </p>
+                        </div>
+                     </div>
+                  </a>
+                  <div class="favorito">
+                     <input
+                        type="checkbox"
+                        class="fav-checkbox"
+                        id="fav-checkbox7"
+                     />
+                     <label for="fav-checkbox7" class="fav-label">
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                     </label>
+                  </div>
+               </article>
+               <article class="doc-card">
+                  <a href="./detailinfo.html">
+                     <img src="./img/imagen4.jpg" alt="" />
+                     <div class="info-miniatura">
+                        <h2>Islas Paradisiacas</h2>
+                        <div class="no-info-mobile">
+                           <p><span>Genero:</span> Naturaleza</p>
+                           <p><span>Año:</span> 2017</p>
+                           <p><span>Puntuación:</span> 4/5</p>
+                           <p>
+                              <span>Sinopsis:</span> Lorem ipsum dolor sit amet,
+                              consectetur adipisicing elit. Ipsam blanditiis,
+                              quo sunt facere obcaecati
+                           </p>
+                        </div>
+                     </div>
+                  </a>
+                  <div class="favorito">
+                     <input
+                        type="checkbox"
+                        class="fav-checkbox"
+                        id="fav-checkbox8"
+                     />
+                     <label for="fav-checkbox8" class="fav-label">
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                     </label>
+                  </div>
+               </article>
+               <article class="doc-card">
+                  <a href="./detailinfo.html">
+                     <img src="./img/imagen21.jpg" alt="" />
+                     <div class="info-miniatura">
+                        <h2>Inteligencia Artificial</h2>
+                        <div class="no-info-mobile">
+                           <p><span>Genero:</span> Ciencia</p>
+                           <p><span>Año:</span> 2020</p>
+                           <p><span>Puntuación:</span> 3/5</p>
+                           <p>
+                              <span>Sinopsis:</span>
+                              Lorem ipsum dolor sit amet, consectetur
+                              adipisicing elit. Ipsam blanditiis, quo sunt
+                              facere obcaecati
+                           </p>
+                        </div>
+                     </div>
+                  </a>
+                  <div class="favorito">
+                     <input
+                        type="checkbox"
+                        class="fav-checkbox"
+                        id="fav-checkbox9"
+                     />
+                     <label for="fav-checkbox9" class="fav-label">
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                     </label>
+                  </div>
+               </article>
+               <article class="doc-card">
+                  <a href="./detailinfo.html">
+                     <img src="./img/imagen22.jpg" alt="" />
+                     <div class="info-miniatura">
+                        <h2>Efectos del THC</h2>
+                        <div class="no-info-mobile">
+                           <p><span>Genero:</span> Investigación</p>
+                           <p><span>Año:</span> 2020</p>
+                           <p><span>Puntuación:</span> 4/5</p>
+                           <p>
+                              <span>Sinopsis:</span>
+                              Lorem ipsum dolor sit amet, consectetur
+                              adipisicing elit. Ipsam blanditiis, quo sunt
+                              facere obcaecati
+                           </p>
+                        </div>
+                     </div>
+                  </a>
+                  <div class="favorito">
+                     <input
+                        type="checkbox"
+                        class="fav-checkbox"
+                        id="fav-checkbox10"
+                     />
+                     <label for="fav-checkbox10" class="fav-label">
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                     </label>
+                  </div>
+               </article>
+               <article class="doc-card">
+                  <a href="./detailinfo.html">
+                     <img src="./img/imagen23.jpg" alt="" />
+                     <div class="info-miniatura">
+                        <h2>Grandes Castillos</h2>
+                        <div class="no-info-mobile">
+                           <p><span>Genero:</span> Construcciones</p>
+                           <p><span>Año:</span> 2020</p>
+                           <p><span>Puntuación:</span> 4/5</p>
+                           <p>
+                              <span>Sinopsis:</span>
+                              Lorem ipsum dolor sit amet, consectetur
+                              adipisicing elit. Ipsam blanditiis, quo sunt
+                              facere obcaecati
+                           </p>
+                        </div>
+                     </div>
+                  </a>
+                  <div class="favorito">
+                     <input
+                        type="checkbox"
+                        class="fav-checkbox"
+                        id="fav-checkbox11"
+                     />
+                     <label for="fav-checkbox11" class="fav-label">
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                     </label>
+                  </div>
+               </article>
+               <article class="doc-card">
+                  <a href="./detailinfo.html">
+                     <img src="./img/imagen24.jpg" alt="" />
+                     <div class="info-miniatura">
+                        <h2>Maestros de la pizza</h2>
+                        <div class="no-info-mobile">
+                           <p><span>Genero:</span> Comida</p>
+                           <p><span>Año:</span> 2020</p>
+                           <p><span>Puntuación:</span> 3/5</p>
+                           <p>
+                              <span>Sinopsis:</span> Lorem ipsum dolor sit amet,
+                              consectetur adipisicing elit. Ipsam blanditiis,
+                              quo sunt facere obcaecati
+                           </p>
+                        </div>
+                     </div>
+                  </a>
+                  <div class="favorito">
+                     <input
+                        type="checkbox"
+                        class="fav-checkbox"
+                        id="fav-checkbox12"
+                     />
+                     <label for="fav-checkbox12" class="fav-label">
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                     </label>
+                  </div>
+               </article>
+            </div>
+         </section>
+         <section class="section favoritos" id="favoritos">
+            <h1>Favoritos</h1>
+         </section>
+      </main>
+      <footer class="footer">
+         <div class="foo-wrapper">
+            <aside class="web-links">
+               <ul class="enlaces-list">
+                  <li><a href="">Quienes Somos</a></li>
+                  <li><a href="">Faqs</a></li>
+                  <li><a href="">Contacto</a></li>
+                  <li><a href="">Condiciones Generales</a></li>
+                  <li><a href="">Politica Cookies</a></li>
+               </ul>
+            </aside>
+
+            <aside class="social-links">
+               <ul class="social-list">
+                  <li>
+                     <a
+                        href="#"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="social-link"
+                     >
+                        <i class="fab fa-facebook-square"></i>
+                     </a>
+                  </li>
+                  <li>
+                     <a
+                        href="#"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="social-link"
+                     >
+                        <i class="fab fa-twitter-square"></i>
+                     </a>
+                  </li>
+                  <li>
+                     <a
+                        href="#"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="social-link"
+                     >
+                        <i class="fab fa-youtube-square"></i>
+                     </a>
+                  </li>
+               </ul>
+            </aside>
+         </div>
+         <p>
+            Todos los derechos reservados.
+            <a href="#"> <i class="far fa-copyright"></i> Docstrming</a>
+         </p>
+      </footer>
+   </body>
+</html>

@@ -3,7 +3,146 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Detail Info</title>
+      <title>DetailInfo</title>
+
+      <link
+         rel="stylesheet"
+         href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css"
+      />
+
+      <link rel="stylesheet" href="./css/reset.css" />
+      <link rel="stylesheet" href="./css/style.css" />
+      <link rel="stylesheet" href="./css/navbar.css" />
+      <link rel="stylesheet" href="./css/detailinfo.css" />
+      <link rel="stylesheet" href="./css/footer.css" />
    </head>
-   <body></body>
+   <body class="body-detailinfo">
+      <nav class="navbar">
+         <div class="logo">
+            <a href="#"><img src="./img/logo.png" alt="logo" /></a>
+         </div>
+
+         <input type="checkbox" id="burger-checkbox" />
+         <label for="burger-checkbox" class="burger-label">
+            <i class="fas fa-bars"></i>
+         </label>
+
+         <ul class="menu-list">
+            <li class="menu-item"><a href="#novedades">Novedades</a></li>
+            <li class="menu-item"><a href="#catalogo">Catalogo</a></li>
+            <li class="menu-item"><a href="#favoritos">Favoritos</a></li>
+            <li class="search-item">
+               <form action="#">
+                  <input type="search" placeholder="Buscar..." />
+                  <button class="button btn-transparent">
+                     <i class="fas fa-search"></i>
+                  </button>
+               </form>
+            </li>
+         </ul>
+         <form action="index.html" class="logout">
+            <button class="button btn-hollow">logout</button>
+         </form>
+      </nav>
+      <main class="main">
+         <div class="fondo-contenido">
+            <section class="ficha-doc">
+               <h1 class="doc-title">Inteligencia Artificial</h1>
+               <div class="doc-video">
+                  <video
+                     src="./img/video-trailer2.mp4"
+                     autoplay
+                     controls
+                  ></video>
+               </div>
+               <div class="doc-info">
+                  <h2>Director</h2>
+                  <p>Max Powell</p>
+                  <h3>Genero</h3>
+                  <p>Ciencia</p>
+                  <p>
+                     <span>Año:</span> 2020 <span>Puntuación:</span> 3/5
+                     <span>Calificación:</span> 12+
+                  </p>
+                  <h3>Sinopsis</h3>
+                  <p>
+                     Suspendisse ultrices sem non felis rhoncus, et lacinia ex
+                     pharetra. Mauris in mauris fringilla, fringilla neque id,
+                     aliquam velit. Mauris porta rutrum velit, sed aliquam lorem
+                     tincidunt at. Nulla eu molestie nisl. Suspendisse eleifend
+                     nulla ut dui molestie, eget dictum ex ultricies. Nam eget
+                     metus tempor, volutpat elit et, maximus sapien.
+                  </p>
+                  <p>
+                     Sed feugiat, enim in elementum vestibulum, ex nisi luctus
+                     ex, sit amet efficitur turpis diam non dolor. Proin
+                     venenatis arcu sit amet dui pharetra, tempus fermentum est
+                     consequat. Integer nisl purus, dignissim sit amet mollis
+                     eget, luctus ut felis. Sed a laoreet orci. Donec pretium
+                     purus nec arcu imperdiet, sed blandit sem tempus.
+                  </p>
+               </div>
+               <div class="doc-play">
+                  <a class="button" href="#">Ver Ahora</a>
+               </div>
+            </section>
+         </div>
+
+         <section class="section relacionado">
+            <h1>Contenido relacionado</h1>
+         </section>
+      </main>
+      <footer class="footer">
+         <div class="foo-wrapper">
+            <aside class="web-links">
+               <ul class="enlaces-list">
+                  <li><a href="">Quienes Somos</a></li>
+                  <li><a href="">Faqs</a></li>
+                  <li><a href="">Contacto</a></li>
+                  <li><a href="">Condiciones Generales</a></li>
+                  <li><a href="">Politica Cookies</a></li>
+               </ul>
+            </aside>
+
+            <aside class="social-links">
+               <ul class="social-list">
+                  <li>
+                     <a
+                        href="#"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="social-link"
+                     >
+                        <i class="fab fa-facebook-square"></i>
+                     </a>
+                  </li>
+                  <li>
+                     <a
+                        href="#"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="social-link"
+                     >
+                        <i class="fab fa-twitter-square"></i>
+                     </a>
+                  </li>
+                  <li>
+                     <a
+                        href="#"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="social-link"
+                     >
+                        <i class="fab fa-youtube-square"></i>
+                     </a>
+                  </li>
+               </ul>
+            </aside>
+         </div>
+         <p>
+            Todos los derechos reservados.
+            <a href="#"> <i class="far fa-copyright"></i> Docstrming</a>
+         </p>
+      </footer>
+   </body>
 </html>

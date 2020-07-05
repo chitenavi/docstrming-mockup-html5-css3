@@ -4,324 +4,98 @@
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Docstrming</title>
+
       <link
          rel="stylesheet"
          href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css"
       />
+
       <link rel="stylesheet" href="./css/reset.css" />
       <link rel="stylesheet" href="./css/style.css" />
-      <link rel="stylesheet" href="./css/navbar.css" />
-      <link rel="stylesheet" href="./css/header.css" />
-      <link rel="stylesheet" href="./css/novedades.css" />
-      <link rel="stylesheet" href="./css/miniatura.css" />
-      <link rel="stylesheet" href="./css/catalogo.css" />
+      <link rel="stylesheet" href="./css/login.css" />
       <link rel="stylesheet" href="./css/footer.css" />
    </head>
-   <body class="wrapper">
-      <nav class="navbar">
-         <div class="logo">
-            <a href="#"><img src="./img/logo.png" alt="logo" /></a>
-         </div>
+   <body class="body-login">
+      <header class="login-header">
+         <img src="./img/logo.png" alt="logo" />
 
-         <input type="checkbox" id="burger-checkbox" />
-         <label for="burger-checkbox" class="burger-label">
-            <i class="fas fa-bars"></i>
-         </label>
-
-         <ul class="menu-list">
-            <li class="menu-item"><a href="#novedades">Novedades</a></li>
-            <li class="menu-item"><a href="#catalogo">Catalogo</a></li>
-            <li class="menu-item"><a href="#favoritos">Favoritos</a></li>
-            <li class="search-item">
-               <input type="text" placeholder="Buscar..." /><a href="#"
-                  ><i class="fas fa-search"></i
-               ></a>
-            </li>
-         </ul>
-         <div class="logout">
-            <button class="button">logout</button>
+         <div class="tag-line">
+            <p>
+               Tu lugar de documentales en streaming con un inmenso catálogo.
+            </p>
+            <p>Disfruta, descubre y aprende!</p>
          </div>
-      </nav>
-      <header class="site-header">
-         <h1 class="main-title">Docstrming</h1>
-         <p>
-            Tu lugar de <span>documentales en streaming</span> con un inmenso
-            catálogo.
-         </p>
-         <p>Disfruta, descubre y aprende!</p>
       </header>
       <main class="main">
-         <section class="section novedades" id="novedades">
-            <h1>Novedades</h1>
-            <div class="novedades-wrapper">
-               <article class="doc-card">
-                  <a href="./detailinfo.html">
-                     <img src="./img/imagen21.jpg" alt="" />
-                     <div class="info-miniatura">
-                        <h2>Inteligencia Artificial</h2>
-                        <div class="no-info-mobile">
-                           <p><span>Genero:</span> Ciencia</p>
-                           <p><span>Año:</span> 2020</p>
-                           <p><span>Puntuación:</span> 3/5</p>
-                           <p>
-                              <span>Sinopsis:</span>
-                              Lorem ipsum dolor sit amet, consectetur
-                              adipisicing elit. Ipsam blanditiis, quo sunt
-                              facere obcaecati pariatur alias atque earum sed?
-                              Quia, ipsam reiciendis possimus!
-                           </p>
-                        </div>
-                     </div>
-                  </a>
-               </article>
-               <article class="doc-card">
-                  <a href="./detailinfo.html">
-                     <img src="./img/imagen3.jpg" alt="" />
-                     <div class="info-miniatura">
-                        <h2>Pandemia Covid-19</h2>
-                        <div class="no-info-mobile">
-                           <p><span>Genero:</span> Investigación</p>
-                           <p><span>Año:</span> 2020</p>
-                           <p><span>Puntuación:</span> 4/5</p>
-                           <p>
-                              <span>Sinopsis:</span>
-                              Lorem ipsum dolor sit amet, consectetur
-                              adipisicing elit. Ipsam blanditiis, quo sunt
-                              facere obcaecati pariatur alias atque earum sed?
-                              Quia, ipsam reiciendis possimus!
-                           </p>
-                        </div>
-                     </div>
-                  </a>
-               </article>
-               <article class="doc-card">
-                  <a href="./detailinfo.html">
-                     <img src="./img/imagen23.jpg" alt="" />
-                     <div class="info-miniatura">
-                        <h2>Grandes Castillos de Mundo</h2>
-                        <div class="no-info-mobile">
-                           <p><span>Genero:</span> Construcciones</p>
-                           <p><span>Año:</span> 2020</p>
-                           <p><span>Puntuación:</span> 4/5</p>
-                           <p>
-                              <span>Sinopsis:</span>
-                              Lorem ipsum dolor sit amet, consectetur
-                              adipisicing elit. Ipsam blanditiis, quo sunt
-                              facere obcaecati pariatur alias atque earum sed?
-                              Quia, ipsam reiciendis possimus!
-                           </p>
-                        </div>
-                     </div>
-                  </a>
-               </article>
-               <article class="doc-card">
-                  <a href="./detailinfo.html">
-                     <img src="./img/imagen24.jpg" alt="" />
-                     <div class="info-miniatura">
-                        <h2>Maestros de la pizza</h2>
-                        <div class="no-info-mobile">
-                           <p><span>Genero:</span> Comida</p>
-                           <p><span>Año:</span> 2020</p>
-                           <p><span>Puntuación:</span> 3/5</p>
-                           <p>
-                              <span>Sinopsis:</span> Lorem ipsum dolor sit amet,
-                              consectetur adipisicing elit. Ipsam blanditiis,
-                              quo sunt facere obcaecati pariatur alias atque
-                              earum sed? Quia, ipsam reiciendis possimus!
-                           </p>
-                        </div>
-                     </div>
-                  </a>
-               </article>
-            </div>
-         </section>
-
-         <section class="section catalogo" id="catalogo">
-            <h1>Catalogo</h1>
-            <div class="filter">
-               <label for="categoria">Selecciona categoría</label>
-               <select id="categoria" name="categoria">
-                  <option value="">-- Todas las categorías --</option>
-                  <option value="1">Ciencia</option>
-                  <option value="2">Investigación</option>
-                  <option value="3">Construcciones</option>
-                  <option value="4">Comida</option>
-                  <option value="5">Naturaleza</option>
-               </select>
-            </div>
-            <div class="catalogo-wrapper">
-               <article class="doc-card">
-                  <a href="./detailinfo.html">
-                     <img src="./img/imagen1.jpg" alt="" />
-                     <div class="info-miniatura">
-                        <h2>EL Tigre de Bengala</h2>
-                        <div class="no-info-mobile">
-                           <p><span>Genero:</span> Naturaleza</p>
-                           <p><span>Año:</span> 2007</p>
-                           <p><span>Puntuación:</span> 4/5</p>
-                           <p>
-                              <span>Sinopsis:</span>
-                              Lorem ipsum dolor sit amet, consectetur
-                              adipisicing elit. Ipsam blanditiis, quo sunt
-                              facere obcaecati pariatur alias atque earum sed?
-                              Quia, ipsam reiciendis possimus!
-                           </p>
-                        </div>
-                     </div>
-                  </a>
-               </article>
-               <article class="doc-card">
-                  <a href="./detailinfo.html">
-                     <img src="./img/imagen2.jpg" alt="" />
-                     <div class="info-miniatura">
-                        <h2>Piedras De Stonehenge</h2>
-                        <div class="no-info-mobile">
-                           <p><span>Genero:</span> Construcciones</p>
-                           <p><span>Año:</span> 2013</p>
-                           <p><span>Puntuación:</span> 2/5</p>
-                           <p>
-                              <span>Sinopsis:</span>
-                              Lorem ipsum dolor sit amet, consectetur
-                              adipisicing elit. Ipsam blanditiis, quo sunt
-                              facere obcaecati pariatur alias atque earum sed?
-                              Quia, ipsam reiciendis possimus!
-                           </p>
-                        </div>
-                     </div>
-                  </a>
-               </article>
-               <article class="doc-card">
-                  <a href="./detailinfo.html">
-                     <img src="./img/imagen3.jpg" alt="" />
-                     <div class="info-miniatura">
-                        <h2>Pandemia Covid-19</h2>
-                        <div class="no-info-mobile">
-                           <p><span>Genero:</span> Investigación</p>
-                           <p><span>Año:</span> 2020</p>
-                           <p><span>Puntuación:</span> 4/5</p>
-                           <p>
-                              <span>Sinopsis:</span>
-                              Lorem ipsum dolor sit amet, consectetur
-                              adipisicing elit. Ipsam blanditiis, quo sunt
-                              facere obcaecati pariatur alias atque earum sed?
-                              Quia, ipsam reiciendis possimus!
-                           </p>
-                        </div>
-                     </div>
-                  </a>
-               </article>
-               <article class="doc-card">
-                  <a href="./detailinfo.html">
-                     <img src="./img/imagen4.jpg" alt="" />
-                     <div class="info-miniatura">
-                        <h2>Islas Paradisiacas</h2>
-                        <div class="no-info-mobile">
-                           <p><span>Genero:</span> Naturaleza</p>
-                           <p><span>Año:</span> 2017</p>
-                           <p><span>Puntuación:</span> 4/5</p>
-                           <p>
-                              <span>Sinopsis:</span> Lorem ipsum dolor sit amet,
-                              consectetur adipisicing elit. Ipsam blanditiis,
-                              quo sunt facere obcaecati pariatur alias atque
-                              earum sed? Quia, ipsam reiciendis possimus!
-                           </p>
-                        </div>
-                     </div>
-                  </a>
-               </article>
-               <article class="doc-card">
-                  <a href="./detailinfo.html">
-                     <img src="./img/imagen21.jpg" alt="" />
-                     <div class="info-miniatura">
-                        <h2>Inteligencia Artificial</h2>
-                        <div class="no-info-mobile">
-                           <p><span>Genero:</span> Ciencia</p>
-                           <p><span>Año:</span> 2020</p>
-                           <p><span>Puntuación:</span> 3/5</p>
-                           <p>
-                              <span>Sinopsis:</span>
-                              Lorem ipsum dolor sit amet, consectetur
-                              adipisicing elit. Ipsam blanditiis, quo sunt
-                              facere obcaecati pariatur alias atque earum sed?
-                              Quia, ipsam reiciendis possimus!
-                           </p>
-                        </div>
-                     </div>
-                  </a>
-               </article>
-               <article class="doc-card">
-                  <a href="./detailinfo.html">
-                     <img src="./img/imagen22.jpg" alt="" />
-                     <div class="info-miniatura">
-                        <h2>Efectos del THC</h2>
-                        <div class="no-info-mobile">
-                           <p><span>Genero:</span> Investigación</p>
-                           <p><span>Año:</span> 2020</p>
-                           <p><span>Puntuación:</span> 4/5</p>
-                           <p>
-                              <span>Sinopsis:</span>
-                              Lorem ipsum dolor sit amet, consectetur
-                              adipisicing elit. Ipsam blanditiis, quo sunt
-                              facere obcaecati pariatur alias atque earum sed?
-                              Quia, ipsam reiciendis possimus!
-                           </p>
-                        </div>
-                     </div>
-                  </a>
-               </article>
-               <article class="doc-card">
-                  <a href="./detailinfo.html">
-                     <img src="./img/imagen23.jpg" alt="" />
-                     <div class="info-miniatura">
-                        <h2>Grandes Castillos de Mundo</h2>
-                        <div class="no-info-mobile">
-                           <p><span>Genero:</span> Construcciones</p>
-                           <p><span>Año:</span> 2020</p>
-                           <p><span>Puntuación:</span> 4/5</p>
-                           <p>
-                              <span>Sinopsis:</span>
-                              Lorem ipsum dolor sit amet, consectetur
-                              adipisicing elit. Ipsam blanditiis, quo sunt
-                              facere obcaecati pariatur alias atque earum sed?
-                              Quia, ipsam reiciendis possimus!
-                           </p>
-                        </div>
-                     </div>
-                  </a>
-               </article>
-               <article class="doc-card">
-                  <a href="./detailinfo.html">
-                     <img src="./img/imagen24.jpg" alt="" />
-                     <div class="info-miniatura">
-                        <h2>Maestros de la pizza</h2>
-                        <div class="no-info-mobile">
-                           <p><span>Genero:</span> Comida</p>
-                           <p><span>Año:</span> 2020</p>
-                           <p><span>Puntuación:</span> 3/5</p>
-                           <p>
-                              <span>Sinopsis:</span> Lorem ipsum dolor sit amet,
-                              consectetur adipisicing elit. Ipsam blanditiis,
-                              quo sunt facere obcaecati pariatur alias atque
-                              earum sed? Quia, ipsam reiciendis possimus!
-                           </p>
-                        </div>
-                     </div>
-                  </a>
-               </article>
-            </div>
-         </section>
-         <section class="section favoritos" id="favoritos">
-            <h1>Favoritos</h1>
+         <form class="form-login" action="main.html">
+            <h1>Iniciar Sesión</h1>
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" placeholder="e-mail" required />
+            <label for="pwd">Contraseña:</label>
+            <input type="password" id="pwd" placeholder="contraseña" required />
+            <button class="button" type="submit">login</button>
             <p>
-               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea
-               natus fugiat excepturi officiis unde ducimus exercitationem
-               eveniet pariatur consectetur ut ullam temporibus sed nesciunt
-               maiores, qui, blanditiis incidunt cupiditate non.
+               ¿Olvidaste la contraseña?
+               <a href="#">Recupérala aquí</a>
             </p>
-         </section>
+
+            <p>
+               ¿Todavía sin cuenta?
+               <a href="#">Regístarte aquí</a>
+            </p>
+         </form>
       </main>
       <footer class="footer">
-         <p>Todos los derechos reservados. <a href="#">Docstrming</a></p>
+         <div class="foo-wrapper">
+            <aside class="web-links">
+               <ul class="enlaces-list">
+                  <li><a href="">Quienes Somos</a></li>
+                  <li><a href="">Faqs</a></li>
+                  <li><a href="">Contacto</a></li>
+                  <li><a href="">Condiciones Generales</a></li>
+                  <li><a href="">Politica Cookies</a></li>
+               </ul>
+            </aside>
+
+            <aside class="social-links">
+               <ul class="social-list">
+                  <li>
+                     <a
+                        href="#"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="social-link"
+                     >
+                        <i class="fab fa-facebook-square"></i>
+                     </a>
+                  </li>
+                  <li>
+                     <a
+                        href="#"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="social-link"
+                     >
+                        <i class="fab fa-twitter-square"></i>
+                     </a>
+                  </li>
+                  <li>
+                     <a
+                        href="#"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="social-link"
+                     >
+                        <i class="fab fa-youtube-square"></i>
+                     </a>
+                  </li>
+               </ul>
+            </aside>
+         </div>
+         <p>
+            Todos los derechos reservados.
+            <a href="#"> <i class="far fa-copyright"></i> Docstrming</a>
+         </p>
       </footer>
    </body>
 </html>

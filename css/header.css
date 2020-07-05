@@ -9,22 +9,29 @@
    justify-content: center;
    text-align: center;
 }
-.site-header h1 {
-   font-size: 15vw;
-   text-transform: lowercase;
+.main-title {
+   font-size: 12.5vw;
+   font-family: "Monoton", Arial, Helvetica, sans-serif;
    color: var(--color-primario);
 }
-.site-header p {
+
+.tag-line {
+   border: 1px solid white;
+   padding: 0.5rem 1rem;
+   border-radius: 40px;
+   margin: 0 0.5rem;
+   background-color: rgba(125, 125, 125, 0.3);
+}
+.tag-line p {
+   font-family: "Roboto Mono", "Times New Roman", Times, serif;
    color: white;
-   font-style: italic;
-   margin: 0 2rem;
 }
 
 @media (min-width: 768px) {
-   .site-header h1 {
-      font-size: 12vw;
+   .main-title {
+      font-size: 10vw;
    }
-   .site-header p {
-      font-size: 1.8vw;
+   .tag-line p {
+      font-size: 1.5vw;
    }
 }
