@@ -12,14 +12,16 @@
 
       <link rel="stylesheet" href="./css/reset.css" />
       <link rel="stylesheet" href="./css/style.css" />
+      <link rel="stylesheet" href="./css/botones.css" />
       <link rel="stylesheet" href="./css/navbar.css" />
+      <link rel="stylesheet" href="./css/miniatura.css" />
       <link rel="stylesheet" href="./css/detailinfo.css" />
       <link rel="stylesheet" href="./css/footer.css" />
    </head>
    <body class="body-detailinfo">
       <nav class="navbar">
          <div class="logo">
-            <a href="#"><img src="./img/logo.png" alt="logo" /></a>
+            <a href="main.html"><img src="./img/logo.png" alt="logo" /></a>
          </div>
 
          <input type="checkbox" id="burger-checkbox" />
@@ -44,7 +46,7 @@
             <button class="button btn-hollow">logout</button>
          </form>
       </nav>
-      <main class="main">
+      <main class="main-detailinfo">
          <div class="fondo-contenido">
             <section class="ficha-doc">
                <h1 class="doc-title">Inteligencia Artificial</h1>
@@ -60,10 +62,7 @@
                   <p>Max Powell</p>
                   <h3>Genero</h3>
                   <p>Ciencia</p>
-                  <p>
-                     <span>Año:</span> 2020 <span>Puntuación:</span> 3/5
-                     <span>Calificación:</span> 12+
-                  </p>
+
                   <h3>Sinopsis</h3>
                   <p>
                      Suspendisse ultrices sem non felis rhoncus, et lacinia ex
@@ -81,15 +80,63 @@
                      eget, luctus ut felis. Sed a laoreet orci. Donec pretium
                      purus nec arcu imperdiet, sed blandit sem tempus.
                   </p>
+                  <p>
+                     <span>Año:</span> 2020 <span>Puntuación:</span> 3/5
+                     <span>Calificación:</span> 12+
+                  </p>
                </div>
                <div class="doc-play">
-                  <a class="button" href="#">Ver Ahora</a>
+                  <a class="button" href="#"
+                     >Ver Ahora <i class="fas fa-play-circle"></i
+                  ></a>
                </div>
             </section>
          </div>
 
-         <section class="section relacionado">
+         <section class="section sec-degradada clearfix">
             <h1>Contenido relacionado</h1>
+            <div class="container-rel">
+               <article class="doc-card">
+                  <a href="./detailinfo.html">
+                     <img src="https://placeimg.com/640/426/tech" alt="covid" />
+                     <div class="info-miniatura">
+                        <h2>Titulo Doc</h2>
+                     </div>
+                  </a>
+               </article>
+               <article class="doc-card">
+                  <a href="./detailinfo.html">
+                     <img src="https://placeimg.com/640/426/tech" alt="covid" />
+                     <div class="info-miniatura">
+                        <h2>Titulo Doc</h2>
+                     </div>
+                  </a>
+               </article>
+               <article class="doc-card">
+                  <a href="./detailinfo.html">
+                     <img src="https://placeimg.com/640/426/tech" alt="covid" />
+                     <div class="info-miniatura">
+                        <h2>Titulo Doc</h2>
+                     </div>
+                  </a>
+               </article>
+               <article class="doc-card">
+                  <a href="./detailinfo.html">
+                     <img src="https://placeimg.com/640/426/tech" alt="covid" />
+                     <div class="info-miniatura">
+                        <h2>Titulo Doc</h2>
+                     </div>
+                  </a>
+               </article>
+               <article class="doc-card">
+                  <a href="./detailinfo.html">
+                     <img src="https://placeimg.com/640/426/tech" alt="covid" />
+                     <div class="info-miniatura">
+                        <h2>Titulo Doc</h2>
+                     </div>
+                  </a>
+               </article>
+            </div>
          </section>
       </main>
       <footer class="footer">

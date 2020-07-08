@@ -11,11 +11,13 @@
 
       <link rel="stylesheet" href="./css/reset.css" />
       <link rel="stylesheet" href="./css/style.css" />
+      <link rel="stylesheet" href="./css/botones.css" />
       <link rel="stylesheet" href="./css/navbar.css" />
       <link rel="stylesheet" href="./css/header.css" />
       <link rel="stylesheet" href="./css/novedades.css" />
       <link rel="stylesheet" href="./css/miniatura.css" />
       <link rel="stylesheet" href="./css/catalogo.css" />
+      <link rel="stylesheet" href="./css/favoritos.css" />
       <link rel="stylesheet" href="./css/footer.css" />
    </head>
    <body class="wrapper">
@@ -56,8 +58,8 @@
             <p>Disfruta, descubre y aprende!</p>
          </div>
       </header>
-      <main>
-         <section class="section novedades" id="novedades">
+      <main class="main">
+         <section class="section sec-degradada" id="novedades">
             <h1>Novedades</h1>
             <div class="novedades-wrapper">
                <article class="doc-card">
@@ -182,17 +184,18 @@
             </div>
          </section>
 
-         <section class="section catalogo" id="catalogo">
+         <section class="section" id="catalogo">
             <h1>Catalogo</h1>
             <div class="filter">
                <select id="categoria" name="categoria">
-                  <option value="">-- Todas las categorías --</option>
+                  <option value="">-Todas las categorías-</option>
                   <option value="1">Ciencia</option>
                   <option value="2">Investigación</option>
                   <option value="3">Construcciones</option>
                   <option value="4">Comida</option>
                   <option value="5">Naturaleza</option>
                </select>
+               <i class="fas fa-sort-down"></i>
             </div>
             <div class="catalogo-wrapper">
                <article class="doc-card">
@@ -435,8 +438,170 @@
                </article>
             </div>
          </section>
-         <section class="section favoritos" id="favoritos">
+         <section class="section sec-degradada" id="favoritos">
             <h1>Favoritos</h1>
+            <div class="favoritos-wrapper">
+               <article class="doc-card">
+                  <a href="./detailinfo.html">
+                     <img src="https://placeimg.com/220/320/any" alt="covid" />
+                     <div class="info-miniatura">
+                        <h2>Titulo Fav1</h2>
+                     </div>
+                  </a>
+                  <div class="favorito">
+                     <input
+                        id="fav-checkbox13"
+                        type="checkbox"
+                        class="fav-checkbox"
+                        checked
+                     />
+                     <label for="fav-checkbox13" class="fav-label">
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                     </label>
+                  </div>
+               </article>
+               <article class="doc-card">
+                  <a href="./detailinfo.html">
+                     <img src="https://placeimg.com/220/320/any" alt="covid" />
+                     <div class="info-miniatura">
+                        <h2>Titulo Fav2</h2>
+                     </div>
+                  </a>
+                  <div class="favorito">
+                     <input
+                        id="fav-checkbox14"
+                        type="checkbox"
+                        class="fav-checkbox"
+                        checked
+                     />
+                     <label for="fav-checkbox14" class="fav-label">
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                     </label>
+                  </div>
+               </article>
+               <article class="doc-card">
+                  <a href="./detailinfo.html">
+                     <img src="https://placeimg.com/220/320/any" alt="covid" />
+                     <div class="info-miniatura">
+                        <h2>Titulo Fav3</h2>
+                     </div>
+                  </a>
+                  <div class="favorito">
+                     <input
+                        id="fav-checkbox15"
+                        type="checkbox"
+                        class="fav-checkbox"
+                        checked
+                     />
+                     <label for="fav-checkbox15" class="fav-label">
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                     </label>
+                  </div>
+               </article>
+               <article class="doc-card">
+                  <a href="./detailinfo.html">
+                     <img src="https://placeimg.com/220/320/any" alt="covid" />
+                     <div class="info-miniatura">
+                        <h2>Titulo Fav4</h2>
+                     </div>
+                  </a>
+                  <div class="favorito">
+                     <input
+                        id="fav-checkbox16"
+                        type="checkbox"
+                        class="fav-checkbox"
+                        checked
+                     />
+                     <label for="fav-checkbox16" class="fav-label">
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                     </label>
+                  </div>
+               </article>
+               <article class="doc-card">
+                  <a href="./detailinfo.html">
+                     <img src="https://placeimg.com/220/320/any" alt="covid" />
+                     <div class="info-miniatura">
+                        <h2>Titulo Fav5</h2>
+                     </div>
+                  </a>
+                  <div class="favorito">
+                     <input
+                        id="fav-checkbox17"
+                        type="checkbox"
+                        class="fav-checkbox"
+                        checked
+                     />
+                     <label for="fav-checkbox17" class="fav-label">
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                     </label>
+                  </div>
+               </article>
+               <article class="doc-card">
+                  <a href="./detailinfo.html">
+                     <img src="https://placeimg.com/220/320/any" alt="covid" />
+                     <div class="info-miniatura">
+                        <h2>Titulo Fav6</h2>
+                     </div>
+                  </a>
+                  <div class="favorito">
+                     <input
+                        id="fav-checkbox18"
+                        type="checkbox"
+                        class="fav-checkbox"
+                        checked
+                     />
+                     <label for="fav-checkbox18" class="fav-label">
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                     </label>
+                  </div>
+               </article>
+               <article class="doc-card">
+                  <a href="./detailinfo.html">
+                     <img src="https://placeimg.com/220/320/any" alt="covid" />
+                     <div class="info-miniatura">
+                        <h2>Titulo Fav7</h2>
+                     </div>
+                  </a>
+                  <div class="favorito">
+                     <input
+                        id="fav-checkbox19"
+                        type="checkbox"
+                        class="fav-checkbox"
+                        checked
+                     />
+                     <label for="fav-checkbox19" class="fav-label">
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                     </label>
+                  </div>
+               </article>
+               <article class="doc-card">
+                  <a href="./detailinfo.html">
+                     <img src="https://placeimg.com/220/320/any" alt="covid" />
+                     <div class="info-miniatura">
+                        <h2>Titulo Fav8</h2>
+                     </div>
+                  </a>
+                  <div class="favorito">
+                     <input
+                        id="fav-checkbox20"
+                        type="checkbox"
+                        class="fav-checkbox"
+                        checked
+                     />
+                     <label for="fav-checkbox20" class="fav-label">
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                     </label>
+                  </div>
+               </article>
+            </div>
          </section>
       </main>
       <footer class="footer">

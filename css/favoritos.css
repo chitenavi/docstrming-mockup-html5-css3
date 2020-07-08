@@ -1,0 +1,23 @@
+.favoritos-wrapper .doc-card {
+   margin: 1rem 0.5rem;
+}
+.favoritos-wrapper .doc-card img {
+   border-radius: 1rem 0;
+   box-shadow: 2px 2px 2px black;
+}
+.favoritos-wrapper .info-miniatura {
+   opacity: 1;
+   border-radius: 0 0 1rem 0;
+}
+.favoritos-wrapper {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   max-width: calc(var(--max-width) - 1rem);
+   /* Ajuste por seccion degradada */
+   margin: 0 auto;
+}
+.section.sec-degradada h1 {
+   max-width: calc(var(--max-width) - 1rem);
+   margin: 0 auto;
+}

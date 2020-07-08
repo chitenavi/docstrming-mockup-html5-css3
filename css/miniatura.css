@@ -5,13 +5,13 @@
 .doc-card a,
 .doc-card img {
    display: block;
+   width: 100%;
    text-decoration: none;
 }
 
 /* En mobile solo muestro titulo */
 .info-miniatura h2 {
    color: white;
-   text-decoration: none;
    font-weight: normal;
    font-size: 0.8rem;
    text-align: center;
@@ -29,18 +29,17 @@
    font-size: 1.6rem;
 }
 
-.fav-checkbox {
-   display: none;
-}
-.fas.fa-star {
+.fav-checkbox,
+.fas.fa-star,
+.fav-checkbox:checked ~ .fav-label .far.fa-star {
+   /*Ocultamos checkboxes, estrella solida y si hay check 
+     estrella con solo borde */
    display: none;
 }
 .fav-checkbox:checked ~ .fav-label .fas.fa-star {
+   /* Mostramos icono estrella solida cuando hay check */
    color: gold;
    display: inline;
-}
-.fav-checkbox:checked ~ .fav-label .far.fa-star {
-   display: none;
 }
 
 /* Para pantallas mayores mostramos info detallada */
@@ -51,15 +50,16 @@
       padding: 0.5rem;
       background-color: rgba(125, 125, 125, 0.6);
       color: white;
-      text-shadow: 1px 1px 1px black;
+      text-shadow: 2px 2px 2px black;
       transition: opacity 0.3s ease-in-out;
+      width: 100%;
 
       opacity: 0;
    }
    .info-miniatura h2 {
       font-size: 1.1rem;
       font-weight: bold;
-      color: var(--color-primario);
+      color: var(--color-secundario);
    }
    .info-miniatura .no-info-mobile {
       display: block;

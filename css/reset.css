@@ -15,7 +15,17 @@ p {
    margin: 0;
 }
 
+a {
+   text-decoration: none;
+}
+
 img,
 video {
    max-width: 100%;
+}
+
+.clearfix::after {
+   content: "";
+   clear: both;
+   display: table;
 }
