@@ -62,8 +62,8 @@
 
 .sec-degradada .container-rel,
 .sec-degradada > h1 {
-   max-width: calc(var(--max-width) - 1rem);
-   margin: 0 auto;
+   max-width: var(--max-width);
+   margin: 2rem auto;
 }
 
 .container-rel .doc-card {
@@ -74,6 +74,8 @@
    margin: 1rem 0.5rem;
 }
 
+/* Solo para pantallas grandes muestro info al lado del video
+   para dar protagonismo a este */
 @media (min-width: 992px) {
    .ficha-doc {
       display: flex;
