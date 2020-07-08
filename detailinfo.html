@@ -48,8 +48,14 @@
       </nav>
       <main class="main-detailinfo">
          <div class="fondo-contenido">
-            <section class="ficha-doc">
-               <h1 class="doc-title">Inteligencia Artificial</h1>
+            <section
+               itemscope
+               itemtype="http://schema.org/Movie"
+               class="ficha-doc"
+            >
+               <h1 itemprop="nombre" class="doc-title">
+                  Inteligencia Artificial
+               </h1>
                <div class="doc-video">
                   <video
                      src="./img/video-trailer2.mp4"
@@ -59,9 +65,9 @@
                </div>
                <div class="doc-info">
                   <h2>Director</h2>
-                  <p>Max Powell</p>
+                  <p itemprop="director">Max Powell</p>
                   <h3>Genero</h3>
-                  <p>Ciencia</p>
+                  <p itemprop="genero">Ciencia</p>
 
                   <h3>Sinopsis</h3>
                   <p>
@@ -181,6 +187,16 @@
                         class="social-link"
                      >
                         <i class="fab fa-youtube-square"></i>
+                     </a>
+                  </li>
+                  <li>
+                     <a
+                        href="#"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="social-link"
+                     >
+                        <i class="fab fa-instagram-square"></i>
                      </a>
                   </li>
                </ul>

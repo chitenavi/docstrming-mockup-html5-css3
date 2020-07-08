@@ -41,12 +41,6 @@
    font-weight: normal;
 }
 
-.form-login input {
-   margin-bottom: 1rem;
-   background-color: rgba(125, 125, 125, 0.5);
-   border: none;
-   height: 1.8rem;
-}
 .form-login button {
    margin-bottom: 1rem;
 }

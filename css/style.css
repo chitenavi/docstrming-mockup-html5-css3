@@ -14,19 +14,30 @@ body {
    background-color: black;
    overflow-x: hidden;
 }
+
+input[type="email"],
+input[type="password"] {
+   margin-bottom: 1rem;
+   background-color: rgba(125, 125, 125, 0.7);
+   border: none;
+   border-radius: 0.5rem;
+   padding: 0.5rem;
+   font-size: 1.1rem;
+}
 .main {
    max-width: var(--max-width);
    margin: 0 auto;
 }
 /* Secciones en general*/
 .section {
-   margin: 5rem 0;
-   padding: 0 0.5rem;
+   margin: 5rem auto;
    color: white;
+   padding: 0 0.5rem;
 }
 .section > h1 {
    font-weight: normal;
    margin-bottom: 1rem;
+   padding: 0 0.5rem;
    text-transform: uppercase;
    border-bottom: 1px solid white;
 }
@@ -80,4 +91,8 @@ body {
    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
    margin-left: calc(50% - 50vw);
    margin-right: calc(50% - 50vw);
+}
+.sec-degradada > h1 {
+   margin: 0 auto;
+   max-width: var(--max-width);
 }
