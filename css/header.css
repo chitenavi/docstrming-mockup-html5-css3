@@ -1,37 +1,81 @@
+/* Header de main.html */
+
 .site-header {
-   background-image: url(../img/hero.jpg);
-   height: 100vh;
+   background-image: linear-gradient(
+         to bottom,
+         rgba(0, 0, 0, 0.8),
+         rgba(0, 0, 0, 0.5)
+      ),
+      url(../img/hero.jpg);
    background-position: top center;
    background-size: cover;
    display: flex;
    flex-direction: column;
-   align-items: center;
-   justify-content: center;
+
    text-align: center;
 }
 .main-title {
-   font-size: 12.5vw;
    font-family: "Monoton", Arial, Helvetica, sans-serif;
    color: var(--color-primario);
+   font-size: 8vw;
+   text-shadow: 2px 2px 2px white;
 }
 
-.tag-line {
-   border: 1px solid white;
-   padding: 0.5rem 1rem;
-   border-radius: 40px;
-   margin: 0 0.5rem;
-   background-color: rgba(125, 125, 125, 0.3);
+.carrusel {
+   padding-top: calc(var(--menu-height) + 0.5rem);
+   flex: 1;
+   position: relative;
 }
-.tag-line p {
-   font-family: "Roboto Mono", "Times New Roman", Times, serif;
+
+.carrusel .doc-container {
+   display: flex;
+
+   overflow-x: auto;
+   scroll-snap-type: x mandatory;
+   scroll-behavior: smooth;
+   -webkit-overflow-scrolling: touch;
+   position: relative;
+}
+
+.doc-container > a {
+   scroll-snap-align: center;
+   flex-shrink: 0;
+   width: 100%;
+}
+
+.carrusel .nav-carrusel a {
    color: white;
+   text-shadow: 2px 2px 2px black;
+   padding: 1rem;
+}
+.carrusel .nav-carrusel a:hover {
+   color: var(--color-primario);
+}
+.carrusel .flecha-izq {
+   position: absolute;
+   top: 50%;
+   font-size: 1.8rem;
+}
+.carrusel .flecha-dcha {
+   position: absolute;
+   top: 50%;
+   right: 0;
+   font-size: 1.8rem;
+}
+.carrusel .puntos {
+   position: absolute;
+   bottom: 0.5rem;
+   display: flex;
+   justify-content: center;
+   width: 100%;
 }
 
-@media (min-width: 768px) {
-   .main-title {
-      font-size: 10vw;
-   }
-   .tag-line p {
-      font-size: 1.5vw;
-   }
+/* Quitamos la barra de scroll horizontal, solo navegadores
+   basados en webkit */
+.doc-container::-webkit-scrollbar {
+   display: none;
+}
+/* Transparente para el resto */
+.doc-container {
+   scrollbar-color: transparent transparent;
 }

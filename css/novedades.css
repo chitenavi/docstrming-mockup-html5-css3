@@ -1,3 +1,5 @@
+/* Sección novedades de main.html */
+
 .novedades-wrapper {
    display: grid;
    grid-template-columns: repeat(2, 1fr);

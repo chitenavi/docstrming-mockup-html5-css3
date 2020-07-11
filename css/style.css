@@ -28,6 +28,7 @@ input[type="password"] {
    max-width: var(--max-width);
    margin: 0 auto;
 }
+
 /* Secciones en general*/
 .section {
    margin: 5rem auto;
