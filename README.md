@@ -1,10 +1,10 @@
-# Práctica 2
+# Maquetado y diseño HTML5 y CSS3
 
-## Fundamentos Web (HTML5 y CSS3)
+## Docstrming Web (HTML5 y CSS3)
 
-Práctica 2 del Bootcamp Web IX de **KeepCoding**, creación de un sitio web de contenido digital en streaming. Todo el contenido es estático y usando HTML5 y CSS3, sin aportación de librerías externas.
+Diseño y maquetado de un sitio web de contenido digital en streaming. Todo el contenido es estático y usando HTML5 y CSS3, sin aportación de librerías externas.
 
-Se basa en una plataforma de documentales online, preparada para dispositivos móviles usando el patrón _mobile-first_ (usando un punto de ruptura en general), aplicando las distintas herramientas aprendidas en el módulo. Tiene la siguiente estructura:
+Se basa en una plataforma de documentales online, preparada para dispositivos móviles usando el patrón _mobile-first_ (usando un punto de ruptura en general), aplicando las distintas técnicas de CSS3. Tiene la siguiente estructura:
 
 -  **Página de login (index.html)**
 
